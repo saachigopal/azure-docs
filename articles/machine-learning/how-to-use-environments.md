@@ -321,7 +321,7 @@ myenv.python.interpreter_path = "/opt/miniconda/bin/python"
 For a registered environment, you can retrieve image details using the following code where `details` is an instance of [DockerImageDetails](https://docs.microsoft.com/python/api/azureml-core/azureml.core.environment.dockerimagedetails?view=azure-ml-py) (AzureML Python SDK >= 1.11) and provides all the information about the environment image such as the dockerfile, registry, and image name.
 
 ```python
-details = environment.get_image_details()
+details = environment.get_image_details(workspace=ws)
 ```
 
 ## Use environments for training
